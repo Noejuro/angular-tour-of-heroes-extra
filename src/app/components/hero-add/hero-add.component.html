@@ -1,0 +1,11 @@
+<div class="add-hero">
+
+    <mat-form-field appearance="outline" class="edited-form-field">
+        <mat-label>Hero Name</mat-label>
+        <input #heroName id="new-hero" matInput placeholder="Name">
+    </mat-form-field>
+  
+    <button mat-raised-button color="accent" (click)="add(heroName.value); heroName.value=''">
+      Add hero
+    </button>
+</div>
