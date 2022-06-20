@@ -5,6 +5,7 @@ import { RouterModule } from '@angular/router';
 import { MatButtonModule } from '@angular/material/button';
 import { MatInputModule } from '@angular/material/input';
 import { MatIconModule } from '@angular/material/icon'
+import { MatToolbarModule } from '@angular/material/toolbar'
 
 import { HeroesComponent } from './heroes/heroes.component';
 import { HeroDetailComponent } from './hero-detail/hero-detail.component';
@@ -12,6 +13,7 @@ import { MessagesComponent } from './messages/messages.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { HeroSearchComponent } from './hero-search/hero-search.component';
 import { HeroAddComponent } from './hero-add/hero-add.component';
+import { ToolbarComponent } from './toolbar/toolbar.component';
 
 
 @NgModule({
@@ -21,12 +23,15 @@ import { HeroAddComponent } from './hero-add/hero-add.component';
     MessagesComponent,
     DashboardComponent,
     HeroSearchComponent,
-    HeroAddComponent
+    HeroAddComponent,
+    ToolbarComponent
   ],
   exports: [
     HeroesComponent,
     HeroDetailComponent,
-    MessagesComponent
+    MessagesComponent,
+    ToolbarComponent,
+    HeroSearchComponent
   ],
   imports: [
     CommonModule,
@@ -34,7 +39,8 @@ import { HeroAddComponent } from './hero-add/hero-add.component';
     FormsModule,
     MatButtonModule,
     MatInputModule,
-    MatIconModule
+    MatIconModule,
+    MatToolbarModule
   ]
 })
 export class ComponentsModule { }

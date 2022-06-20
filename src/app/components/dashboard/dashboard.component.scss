@@ -1,16 +1,18 @@
 /* DashboardComponent's private CSS styles */
-h2 {
+h1 {
   text-align: center;
+}
+
+button {
+  padding: 20px 35px;
+  font-size: 1.3rem;
 }
 
 .heroes-menu {
   padding: 0;
-  margin: auto;
-  max-width: 500px;
 
   /* flexbox */
   display: flex;
-  justify-content: space-around;
-  align-content: center;
-  align-items: center;
+  justify-content: center;
+  gap: 10px;
 }

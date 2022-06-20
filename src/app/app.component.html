@@ -1,7 +1,11 @@
-<h1>{{title}}</h1>
-<nav>
-    <button mat-raised-button color="primary" [routerLink]="'/dashboard'">Dashboard</button>
-    <button mat-raised-button color="primary" [routerLink]="'/heroes'">Heroes</button>
-</nav>
-<router-outlet></router-outlet>
-<app-messages></app-messages>
+<app-toolbar></app-toolbar>
+<main>
+    <div class="item-grid">
+        <router-outlet></router-outlet>
+    </div>
+    <div class="item-grid border-left">
+        <app-messages></app-messages>
+        <app-hero-search *ngIf="hasRoute('/dashboard')"></app-hero-search>
+    </div>
+</main>
+

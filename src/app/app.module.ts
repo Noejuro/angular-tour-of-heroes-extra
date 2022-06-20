@@ -7,6 +7,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppRoutingModule } from './app-routing.module';
 
 import { MatButtonModule } from '@angular/material/button'
+import { MatGridListModule } from '@angular/material/grid-list'
 
 import { InMemoryDataService } from './services/in-memory-data.service';
 
@@ -25,7 +26,8 @@ import { AppComponent } from './app.component';
       InMemoryDataService, { dataEncapsulation: false }
     ),
     BrowserAnimationsModule,
-    MatButtonModule
+    MatButtonModule,
+    MatGridListModule
   ],
   providers: [],
   bootstrap: [AppComponent]
